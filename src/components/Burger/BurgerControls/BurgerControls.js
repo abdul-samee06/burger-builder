@@ -12,7 +12,7 @@ const control=[
 
 const burgerControls = props =>(
     <div className={classes.BurgerControls}>
-        <p>Current Price : {props.price}</p>
+        <p>Current Price : Rs.{props.price}</p>
         {control.map(ctrl =>(
             <BurgerControl
              key={ctrl.label} 

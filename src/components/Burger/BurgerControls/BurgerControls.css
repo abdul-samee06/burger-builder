@@ -15,7 +15,8 @@
     outline: none;
     cursor: pointer;
     border: 1px solid #966909;
-    color: #966909;
+    color: black;
+    /* color:black; */
     font-family: inherit;
     font-size: 1.1em;
     padding: 5px 20px;
@@ -26,7 +27,7 @@
 .OrderButton:hover, .OrderButton:active {
     background-color: #A0DB41;
     border: 1px solid #966909;
-    color: #966909;
+    color: black;
 }
 
 .OrderButton:disabled {
