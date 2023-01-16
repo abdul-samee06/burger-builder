@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Aux from '../hoc/Auxiliary';
 import Burger from '../components/Burger/Burger';
-import BurgerControls from "../components/Burger/BurgerControls/BurgerControls";
+import BuildControls from "../components/Burger/BuildControls/BuildControls";
 import Modal from '../components/UI/Modal/Modal'
 import OrderSummary from "../components/Burger/OrderSummary/OrderSummary";
 
@@ -123,7 +123,7 @@ class BurgerBuilder extends Component {
                      purchaseCanceled = {this.purchaseCanceled} />
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
-                <BurgerControls
+                <BuildControls
                     addIngredient={this.addIngredient}
                     removeIngredient={this.removeIngredient}
                     disabled={disabledInfo}

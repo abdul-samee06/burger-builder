@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from './BurgerControls.css'
-import BurgerControl from './BurgerControl/BurgerControl';
+import classes from './BuildControls.css'
+import BuildControl from './BuildControl/BuildControl';
 
 const control=[
     {label : "Salad", type:"salad"},
@@ -10,11 +10,11 @@ const control=[
     
 ]
 
-const burgerControls = props =>(
-    <div className={classes.BurgerControls}>
+const buildControls = props =>(
+    <div className={classes.BuildControls}>
         <p>Current Price : Rs.{props.price}</p>
         {control.map(ctrl =>(
-            <BurgerControl
+            <BuildControl
              key={ctrl.label} 
              label={ctrl.label}
              addIng = {() => props.addIngredient(ctrl.type)}
@@ -27,4 +27,4 @@ const burgerControls = props =>(
     </div>
 ); 
 
-export default burgerControls;
+export default buildControls;
