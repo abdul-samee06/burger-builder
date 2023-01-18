@@ -6,7 +6,7 @@ import Backdrop from '../Backdrop/Backdrop';
 const modal = props => {
     return (
         <Aux>
-            <Backdrop show={props.show} clicked={props.modalClicked}/>
+            <Backdrop show={props.show} clicked={props.modalClicked} />
             <div
                 className={classes.Modal}
                 style={{
@@ -19,4 +19,8 @@ const modal = props => {
     )
 };
 
-export default modal;
+/*
+    Another way is to change this functional component into
+    class component and use the functions shouldComponentUpdate and componentDidUpdate
+ */
+export default React.memo(modal);
